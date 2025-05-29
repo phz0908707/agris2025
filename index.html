@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Festejando a Conexão Campo e Cidade</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        .header {
+            background-color: #2c6f37; /* Verde do campo */
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            font-size: 1.2em;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.8em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .topic-section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 40px;
+            padding: 20px;
+            background-color: #fdfdfd;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .topic-section h2 {
+            color: #4a4a4a;
+            font-size: 2em;
+            margin-bottom: 20px;
+            text-align: center;
+            border-bottom: 3px solid #e0e0e0;
+            padding-bottom: 10px;
+            width: 100%;
+        }
+        .topic-content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 30px;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .topic-content.reverse {
+            flex-direction: row-reverse; /* Inverte a ordem para alternar imagem/texto */
+        }
+        .topic-image {
+            flex: 1;
+            min-width: 250px; /* Garante que a imagem não fique muito pequena */
+            max-width: 40%;
+        }
+        .topic-image img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            object-fit: cover; /* Garante que a imagem cubra o espaço mantendo a proporção */
+            max-height: 250px; /* Limita a altura da imagem */
+        }
+        .topic-text {
+            flex: 1;
+            font-size: 1.1em;
+            text-align: justify;
+        }
+        .footer {
+            text-align: center;
+            padding: 30px 20px;
+            background-color: #333;
+            color: white;
+            margin-top: 50px;
+            font-size: 0.9em;
+        }
+
+        /* Responsividade básica */
+        @media (max-width: 768px) {
+            .topic-content {
+                flex-direction: column; /* Empilha imagem e texto em telas menores */
+            }
+            .topic-image {
+                max-width: 80%; /* Aumenta a largura da imagem em telas menores */
+            }
+            .topic-content.reverse {
+                flex-direction: column; /* Garante que permaneça em coluna */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Festejando a Conexão Campo e Cidade</h1>
+        <p>A harmonia entre dois mundos que se completam e fortalecem.</p>
+    </div>
+
+    <div class="container">
+        <div class="topic-section">
+            <h2>1. O Campo Alimenta a Cidade</h2>
+            <div class="topic-content">
+                <div class="topic-image">
+                    <img src="https://via.placeholder.com/400x250/8bc34a/ffffff?text=Agricultura" alt="Mãos colhendo vegetais">
+                </div>
+                <div class="topic-text">
+                    <p>Do solo fértil do campo chegam os alimentos frescos que nutrem as mesas urbanas. Essa parceria vital garante nossa nutrição e a segurança alimentar, conectando produtores rurais a milhões de consumidores na cidade.</p>
+                </div>
+            </div>
+        </div>
+
+        ---
+
+        <div class="topic-section">
+            <h2>2. Trocas Culturais e Saberes</h2>
+            <div class="topic-content reverse">
+                <div class="topic-image">
+                    <img src="https://via.placeholder.com/400x250/ff9800/ffffff?text=Cultura+Rural" alt="Pessoas em festa junina">
+                </div>
+                <div class="topic-text">
+                    <p>A riqueza cultural do campo, com suas tradições, festas e culinária típica, encontra na cidade um palco para ser valorizada. Em contrapartida, a cidade oferece novas ideias e tecnologias, criando um intercâmbio dinâmico e enriquecedor.</p>
+                </div>
+            </div>
+        </div>
+
+        ---
+
+        <div class="topic-section">
+            <h2>3. Sustentabilidade e Qualidade de Vida</h2>
+            <div class="topic-content">
+                <div class="topic-image">
+                    <img src="https://via.placeholder.com/400x250/4CAF50/ffffff?text=Natureza" alt="Paisagem de campo com floresta e rio">
+                </div>
+                <div class="topic-text">
+                    <p>O campo é o guardião dos recursos naturais, essencial para a qualidade do ar, água e a biodiversidade. A cidade, ao apoiar práticas sustentáveis e o turismo rural, contribui para a preservação ambiental e busca um estilo de vida mais equilibrado.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 Festejando a Conexão Campo e Cidade. Todos os direitos reservados.</p>
+    </div>
+</body>
+</html>
